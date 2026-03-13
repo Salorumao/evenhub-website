@@ -1,63 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EvenHub Smart School Assistant</title>
+
+<title>EvenHub | Smart School Assistant</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, Helvetica, sans-serif;
 margin:0;
 background:#f4f6f9;
 }
 
-header{
-background:linear-gradient(135deg,#1a73e8,#6a1b9a);
-color:white;
-padding:60px;
-text-align:center;
+/* Navigation */
+
+nav{
+background:#0f172a;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-header img{
-width:150px;
+nav img{
+width:120px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:16px;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Hero Section */
+
+.hero{
+background:linear-gradient(135deg,#1a73e8,#7b00c6);
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:48px;
 margin-bottom:20px;
 }
 
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ff6a00;
+color:white;
+font-size:18px;
+border-radius:8px;
+text-decoration:none;
+}
+
+.button:hover{
+background:#ff8c32;
+}
+
+/* Sections */
+
 section{
-padding:50px;
+padding:70px 20px;
 text-align:center;
 }
+
+section h2{
+font-size:34px;
+margin-bottom:20px;
+}
+
+/* Features */
 
 .features{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
+margin-top:40px;
 }
 
-.feature-box{
+.feature{
 background:white;
-width:250px;
+width:260px;
 margin:15px;
-padding:25px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+padding:30px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
 }
 
-iframe{
-width:90%;
-height:700px;
-border:none;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+.feature h3{
+margin-top:10px;
 }
+
+/* Contact */
+
+.contact{
+background:#0f172a;
+color:white;
+padding:60px 20px;
+}
+
+/* Footer */
 
 footer{
-background:#111;
+background:#020617;
 color:white;
-padding:20px;
 text-align:center;
+padding:20px;
 }
 
 </style>
@@ -66,73 +131,102 @@ text-align:center;
 
 <body>
 
-<header>
+<!-- Navigation -->
+
+<nav>
 
 <img src="evenhub-logo.png">
 
-<h1>EvenHub Smart School Assistant</h1>
+<div>
+<a href="#">Home</a>
+<a href="#features">Features</a>
+<a href="#launch">Launch App</a>
+<a href="#contact">Contact</a>
+</div>
 
-<p>Digitally Transforming School Management</p>
+</nav>
 
-</header>
+<!-- Hero -->
 
-<section>
+<div class="hero">
 
-<h2>About EvenHub</h2>
+<h1>Smart School Assistant</h1>
 
 <p>
-EvenHub Smart School Assistant is a modern school management platform
-designed to simplify student management, attendance tracking,
-parent communication, and administrative workflows through automation.
+EvenHub helps schools manage students, attendance,
+communication, and reports with a powerful automated platform.
 </p>
 
-</section>
+<a class="button" href="YOUR_APPSHEET_LINK" target="_blank">
+Launch App
+</a>
 
-<section>
+</div>
+
+<!-- Features -->
+
+<section id="features">
 
 <h2>Platform Features</h2>
 
 <div class="features">
 
-<div class="feature-box">
+<div class="feature">
 <h3>Student Management</h3>
-<p>Maintain organized student records in one place.</p>
+<p>Maintain organized digital student records easily.</p>
 </div>
 
-<div class="feature-box">
+<div class="feature">
 <h3>Attendance Tracking</h3>
-<p>Track and monitor daily student attendance.</p>
+<p>Track daily attendance and generate reports.</p>
 </div>
 
-<div class="feature-box">
+<div class="feature">
 <h3>Parent Communication</h3>
-<p>Improve communication between teachers and parents.</p>
+<p>Connect teachers and parents seamlessly.</p>
 </div>
 
-<div class="feature-box">
+<div class="feature">
 <h3>Homework Management</h3>
-<p>Teachers can assign and track homework easily.</p>
+<p>Assign and manage homework digitally.</p>
 </div>
 
-<div class="feature-box">
+<div class="feature">
 <h3>Fee Tracking</h3>
 <p>Monitor school fee payments and records.</p>
 </div>
 
-<div class="feature-box">
-<h3>Reports & Analytics</h3>
-<p>Generate useful school management reports.</p>
+<div class="feature">
+<h3>Analytics & Reports</h3>
+<p>Generate insights for better school decisions.</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<!-- Launch Section -->
 
-<h2>Launch Smart School Assistant</h2>
+<section id="launch">
 
-<iframe src="https://www.appsheet.com/start/f77aac19-361f-4a22-a082-8f7e0835ff2b"></iframe>
+<h2>Access Smart School Assistant</h2>
+
+<p>Click below to open the EvenHub Smart School Assistant platform.</p>
+
+<a class="button" href="https://www.appsheet.com/start/f77aac19-361f-4a22-a082-8f7e0835ff2b" target="_blank">
+Open Application
+</a>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+
+<h2>Contact EvenHub</h2>
+
+<p>Email: info@evenhub.com</p>
+<p>Phone: +1 XXX XXX XXXX</p>
 
 </section>
 
@@ -143,4 +237,5 @@ parent communication, and administrative workflows through automation.
 </footer>
 
 </body>
+
 </html>
